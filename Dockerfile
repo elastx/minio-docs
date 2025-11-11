@@ -9,9 +9,8 @@ RUN apt update && apt -y install \
   git \
   bash
 
-RUN git clone https://github.com/minio/docs.git
+RUN git clone https://github.com/elastx/minio-docs.git
 WORKDIR /docs
-COPY sync-minio-server-docs.sh sync-minio-server-docs.sh
 
 RUN pip install -r  requirements.txt
 RUN npm install
