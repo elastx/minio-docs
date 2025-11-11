@@ -10,7 +10,7 @@ RUN apt update && apt -y install \
   bash
 
 RUN git clone https://github.com/elastx/minio-docs.git
-WORKDIR /docs
+WORKDIR /minio-docs
 
 RUN pip install -r  requirements.txt
 RUN npm install
